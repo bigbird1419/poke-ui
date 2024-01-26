@@ -1,0 +1,130 @@
+.container {
+    max-width: 1440px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 998;
+}
+
+.bar-mobile {
+    display: none;
+}
+
+.logo {
+    padding: 8px 0;
+    /* min-width: 150px;
+    max-width: 210px; */
+}
+
+.logo-text {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action>button {
+    background-color: #e6e6e6;
+}
+
+.action-item+.action-item {
+    margin-left: 10px;
+}
+
+.action-item {
+    position: relative;
+}
+
+.action-item i {
+    color: #575757;
+}
+
+.btn-buy:hover {
+    background-color: #dd0c1b;
+    transition: all 0.25s ease-in-out;
+}
+
+.dropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    transform: translateX(30%);
+    z-index: 10;
+}
+
+.action-cart {
+    position: relative;
+}
+
+.cart-total {
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #fff;
+    display: none;
+}
+
+.cart-total {
+    display: flex;
+}
+
+/* tablet & mobile */
+@media (max-width: 1023px) {
+    .logo {
+        display: flex;
+        flex-direction: row-reverse;
+        width: auto;
+    }
+
+    .bar-mobile {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu-mobile {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+    }
+}
+
+/*tablet*/
+@media (min-width: 740px) and (max-width: 1023px) {}
+
+/* mobile */
+@media (max-width: 739px) {
+    .container{
+        padding: 0 6px;
+    }
+    .logo-text {
+        display: none;
+    }
+    .action-buy{
+        display: none;
+    }
+    .dropdown{
+        right: 0;
+        transform: translateX(0%);
+    }
+}

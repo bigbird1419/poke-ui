@@ -1,0 +1,148 @@
+.wrapper {
+    background-color: #fff;
+}
+
+.content {
+    background-color: #fff;
+    z-index: 1;
+}
+
+.products {
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.heading {
+    text-align: center;
+    padding: 15px 15px 20px;
+    border: 1px solid #dddddd;
+}
+
+.heading>h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.product-list {
+    width: 100%;
+}
+
+.product-item {
+    padding: 20px;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+}
+
+.product-img {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img-box {
+    width: 100%;
+    height: 100%;
+}
+
+.img-box>img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+.product-info {
+    width: calc(100% - 100px);
+    padding-left: 20px;
+}
+
+.product-info>h3>a {
+    font-size: 14px;
+    color: #417505;
+    line-height: 1.5;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.product-info>h3>a:hover{
+    color: #db1a2a;
+}
+
+.product-desc {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.product-desc>span:first-child{
+    display: block;
+}
+
+.product-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-action>p {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #db1a2a;
+    margin: 0 5px 0 0;
+}
+
+.btn-icon i {
+    color: #fff;
+}
+
+.more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.more .btn-more{
+    background-color: #ff443c;
+    padding: 6px 30px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.1s ease-in-out;
+}
+
+.btn-more:hover{
+    background-color: #dd0c1b;
+}
+
+.cart {
+    width: 100%;
+}
+
+/* tablet & mobile */
+@media (max-width: 1023px) {
+    .cart.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+/*tablet*/
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .cart{
+        display: none;
+    }
+}

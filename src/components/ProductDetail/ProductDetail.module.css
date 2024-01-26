@@ -1,0 +1,186 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 998;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    /* height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    background-color: #fff;
+    z-index: 999;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    color: #888;
+    cursor: pointer;
+}
+
+.product-title {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.product-title>img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+/* .info {
+    
+} */
+
+.info>h4>a {
+    color: #417505;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.product-des {
+    padding: 15px 20px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.product-des h4{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+}
+
+.product-des span{
+    display: block;
+}
+
+.product-note {
+    padding: 30px;
+}
+
+.note-box {
+    position: relative;
+}
+
+.note-box>i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #ccc;
+}
+
+.note-box>input {
+    width: 100%;
+    padding: 0 10px 0 40px;
+    line-height: 38px;
+    font-size: 14px;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #7f7f7f;
+}
+
+.product-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.select-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.select-quantity>button {
+    border: 1px solid var(--secondary-color);
+}
+
+.select-quantity>span {
+    font-size: 14px;
+    margin: 0 15px;
+}
+
+.product-action>button {
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 10px 30px;
+    border: 1px solid #66a55f;
+    float: right;
+}
+
+.product-action>button p {
+    display: inline;
+}
+
+.product-action>button p:first-child {
+    margin-right: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    z-index: 998;
+}
+
+/* tablet & mobile */
+@media (max-width: 1023px) {
+    .cart.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+/*tablet*/
+@media (min-width: 740px) and (max-width: 1023px) {
+    .container{
+        width: 90%;
+    }
+    .product-title,
+    .product-des,
+    .product-note,
+    .product-action{
+        padding: 10px;
+    }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .container{
+        width: 90%;
+    }
+    .product-title,
+    .product-des,
+    .product-note,
+    .product-action{
+        padding: 10px;
+    }
+}

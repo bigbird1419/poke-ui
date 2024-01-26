@@ -1,0 +1,137 @@
+.menu-item {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    opacity: 0.85;
+    transition: all 0.25s ease-in-out;
+    position: relative;
+}
+
+.menu-item-link{
+    display: inline-flex;
+    padding: 25px 4px;
+    margin: 0 6px;
+    text-decoration: none;
+    color: var(--text-color);
+    position: relative;
+}
+.menu-item-link.active{
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.menu-item:hover {
+    opacity: 1;
+}
+
+.menu-icon {
+    margin-left: 4px;
+    font-size: 10px;
+    display: inline-block;
+    transition: all 0.15s ease-in-out;
+}
+
+.menu-item:hover .menu-icon {
+    transform: rotate(180deg)
+}
+
+.menu-item:hover>.menu-children{
+    top: 100%;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.menu-children {
+    position: absolute;
+    top: 150%;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    min-width: 225px;
+    max-width: 180%;
+    background: #fff;
+    z-index: 999;
+    transition: all 0.25s ease-in-out;
+}
+
+.list-children {
+    list-style: none;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: all 0.25s ease-in-out;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.list-children>li {
+    position: relative;
+}
+
+.item-children {
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    padding: 9px 18px;
+    font-size: 12px;
+    opacity: 0.85;
+    color: var(--text-color);
+    border-bottom: 1px solid #ccc;
+    transition: all 0.25s ease-in-out;
+}
+
+.item-children:hover {
+    opacity: 1;
+}
+
+
+/* tablet & mobile */
+@media (max-width: 1023px){
+    .wrapper{
+        min-width: 300px;
+    }
+    .menu-item{
+        display: block;
+        width: 100%;
+    }
+    .menu-item:hover{
+        background-color: #ccc;
+    }
+    .menu-item-link{
+        display: flex;
+        padding: 10px 20px;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+    }
+    .menu-icon{
+        transform: rotate(-90deg);
+    }
+    .menu-item:hover .menu-icon{
+        transform: rotate(0deg);
+    }
+    .menu-children{
+        top: 0;
+        left: 100%;
+    }
+    .menu-item:hover>.menu-children{
+        top: 50%;
+    }
+    .list-children>li:hover{
+        background-color: #ccc;
+    }
+}
+
+/*tablet*/
+@media (min-width: 740px) and (max-width: 1023px) {}
+
+/* mobile */
+@media (max-width: 739px) {
+    .menu-icon{
+        display: none;
+    }
+    .menu-children{
+        display: none;
+    }
+}

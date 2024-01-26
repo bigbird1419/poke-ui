@@ -1,0 +1,40 @@
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* font-size: 62.5%; */
+  line-height: 1.6rem;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+div{
+  position: relative;
+}
+
+ul{
+  padding-left: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #66a55f;
+  --secondary-color: #db1a2a;
+  --text-color: #333;
+}
+
+.fixed-top{
+  position: sticky;
+  top: 75px;
+}

@@ -1,0 +1,84 @@
+.wrapper {
+    margin: 40px 0;
+}
+
+.container {
+    padding: 0 30px;
+}
+
+.map{
+    position: sticky;
+    top: 40px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contact-heading>h1 {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.contact-heading::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #252a2b;
+    margin: 30px 0;
+}
+
+.contact-info>ul>li {
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.contact-send>h2 {
+    margin: 40px 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.contact-send>h2::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #252a2b;
+    margin-top: 25px;
+}
+
+.form-input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-input>input {
+    border: 1px solid #e7e7e7;
+    outline: none;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #737373;
+}
+.form-input>textarea{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #e7e7e7;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #737373;
+}
+
+.btn-buy {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-buy:hover {
+    background-color: #dd0c1b;
+    transition: all 0.25s ease-in-out;
+}
