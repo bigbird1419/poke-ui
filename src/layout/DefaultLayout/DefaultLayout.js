@@ -27,10 +27,13 @@ function DefaultLayout({ heading = 'ABCXYZ', children }) {
             title: 'Giỏ hàng',
             to: routes.cart
         },
-        
         {
             title: 'Liên hệ',
             to: routes.contact
+        },
+        {
+            title: 'Admin',
+            to: routes.admin
         }
     ]
     // if (children.type === Home) {
@@ -71,7 +74,7 @@ function DefaultLayout({ heading = 'ABCXYZ', children }) {
                 <div className={cx('content')}>
                     <div className='row'>
                         <div className='col-lg-3 col-xl-3 col-md-3 col-sm-12'>
-                            <Sidebar content={contentSidebar} className={'fixed-top'}/>
+                            <Sidebar content={contentSidebar} className={'fixed-top'} />
                         </div>
                         <div className='col-lg-9 col-xl-9 col-md-9 col-sm-12'>
                             {children}
@@ -79,7 +82,7 @@ function DefaultLayout({ heading = 'ABCXYZ', children }) {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }

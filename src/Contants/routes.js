@@ -4,6 +4,7 @@ const routes = {
     cart: '/cart',
     news: '/news',
     contact: '/contact',
-    pokemon: '/products/:pokemonName'
+    pokemon: '/products/:pokemonName',
+    admin: '/admin'
 }
 export default routes
