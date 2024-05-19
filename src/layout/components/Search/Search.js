@@ -18,8 +18,6 @@ function Search({onShow = {}}) {
         setResultSearch(rs)
     }
 
-    console.log(resultSearch)
-
     useEffect(() => {
         const getdata = async () => {
             const data = await getNameForSearch();
@@ -47,7 +45,7 @@ function Search({onShow = {}}) {
                         {resultSearch.map((item, index) => (
                             <li key={index} className={cx('result-item')}>
                                 <Button
-                                    text to={`/products/${item}`}
+                                    normal to={`/products/${item}`}
                                     className={cx('result-link')}
                                     onClick={onShow}
                                 >
